@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Admin — Nepali Bazar</title>
+<link rel="stylesheet" href="assets/css/core.css">
+<link rel="stylesheet" href="assets/css/sell.css">
+</head>
+<body>
+<header class="site-header">
+<div class="brand"><img src="assets/img/logo.png" class="logo"><h1>Nepali Bazar</h1></div>
+<nav class="top-nav"><a href="index.html">Home</a><a href="sell.html">Sell</a><a href="admin.html">Admin</a><a id="authLink3" href="login.html">Login</a></nav>
+</header>
+
+
+<main class="container">
+<h2>Admin Panel</h2>
+
+
+<div id="adminOnly" class="card">
+<p>Admin features below.</p>
+<div class="card">
+<h3>Signup Code</h3>
+<p>Current code: <strong id="currentCode">—</strong></p>
+<div class="form-actions">
+<button id="regenCode" class="btn primary">Regenerate Code</button>
+<button id="copyCode" class="btn ghost">Copy</button>
+</div>
+</div>
+
+
+<div class="card">
+<h3>All Ads</h3>
+<div id="allAds"></div>
+</div>
+
+
+<div class="card">
+<h3>Users</h3>
+<div id="allUsers"></div>
+</div>
+</div>
+
+
+<div id="mustLoginAdmin" class="card">
+<p>You must be the admin to view this page. <a href="login.html">Login</a></p>
+</div>
+</main>
+
+
+<script src="assets/js/core.js"></script>
+<script src="assets/js/auth.js"></script>
+<script src="assets/js/admin.js"></script>
+</body>
+</html>
