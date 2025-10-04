@@ -1,0 +1,24 @@
+:root{
+--bg:#06080c;
+--card:#07102a;
+--accent:#00b0ff; /* neon blue */
+--muted:#9aa8bf;
+--glass: rgba(255,255,255,0.03);
+}
+*{box-sizing:border-box;font-family:Inter,system-ui,Arial;margin:0;padding:0}
+body{background:linear-gradient(180deg,#02030a 0%, #061020 60%);color:#e6f0ff;min-height:100vh}
+.container{max-width:1100px;margin:28px auto;padding:16px}
+.site-header{display:flex;justify-content:space-between;align-items:center;padding:12px 24px;background:linear-gradient(90deg, rgba(0,0,0,0.2), rgba(0,0,0,0.05));border-bottom:1px solid rgba(0,176,255,0.08)}
+.brand{display:flex;align-items:center;gap:12px}
+.logo{height:44px;width:44px;filter:drop-shadow(0 4px 10px rgba(0,176,255,0.12))}
+.site-header h1{font-size:18px;letter-spacing:1px;color:var(--accent)}
+.top-nav a{color:var(--muted);margin-left:18px;text-decoration:none}
+.top-nav a:hover{color:var(--accent)}
+.hero{background:linear-gradient(90deg, rgba(0,176,255,0.06), rgba(0,50,120,0.06));padding:40px;border-radius:12px;box-shadow:0 6px 30px rgba(0,0,0,0.6);display:flex;align-items:center;justify-content:center}
+.hero-inner h2{font-size:34px;color:var(--accent);text-shadow:0 6px 24px rgba(0,160,255,0.06)}
+.btn{display:inline-block;padding:10px 16px;border-radius:10px;border:1px solid rgba(255,255,255,0.04);cursor:pointer;text-decoration:none}
+.btn.primary{background:linear-gradient(90deg,var(--accent),#6ad6ff);color:#001;box-shadow:0 6px 24px rgba(0,176,255,0.08)}
+.btn.ghost{background:transparent;color:var(--muted);border:1px solid rgba(255,255,255,0.03)}
+.card{background:var(--card);padding:16px;border-radius:12px;margin-top:16px;border:1px solid rgba(0,176,255,0.03)}
+.ads-list{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:16px;margin-top:20px}
+.ad{background:linear-gradient(180deg,rgba(255,255,255,
